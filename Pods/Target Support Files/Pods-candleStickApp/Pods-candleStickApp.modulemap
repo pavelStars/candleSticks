@@ -1,0 +1,6 @@
+framework module Pods_candleStickApp {
+  umbrella header "Pods-candleStickApp-umbrella.h"
+
+  export *
+  module * { export * }
+}

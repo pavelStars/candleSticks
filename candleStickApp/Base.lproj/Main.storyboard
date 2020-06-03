@@ -1,24 +1,115 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FZf-Iw-uTx">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="kr5-gc-Sp1">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="Hud-tb-BQg" customClass="ViewController" customModule="candleStickApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WIT-YF-iRl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="59" translatesAutoresizingMaskIntoConstraints="NO" id="68A-1V-Qtf">
+                                <rect key="frame" x="145.5" y="312.5" width="123" height="271"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WqE-8k-e0Y">
+                                        <rect key="frame" x="24" y="0.0" width="75" height="51"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                        <state key="normal" title="Daily"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xjE-x0-NbA">
+                                        <rect key="frame" x="6.5" y="110" width="110" height="51"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                        <state key="normal" title="Weekly"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="baH-wn-8KN">
+                                        <rect key="frame" x="0.0" y="220" width="123" height="51"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                        <state key="normal" title="Monthly"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="68A-1V-Qtf" firstAttribute="centerX" secondItem="WIT-YF-iRl" secondAttribute="centerX" id="7QC-Gb-MXc"/>
+                            <constraint firstItem="68A-1V-Qtf" firstAttribute="centerY" secondItem="WIT-YF-iRl" secondAttribute="centerY" id="tHa-pQ-7Vm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="0cK-Ew-xeL"/>
                     </view>
+                    <navigationItem key="navigationItem" id="cou-Vb-Xd8"/>
+                    <connections>
+                        <outlet property="dailyButton" destination="WqE-8k-e0Y" id="ffW-aE-EST"/>
+                        <outlet property="monthlyButton" destination="baH-wn-8KN" id="8E6-0c-9JW"/>
+                        <outlet property="weeklyButton" destination="xjE-x0-NbA" id="Ynv-4R-Dqt"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SIo-Ye-37n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="962.31884057971024" y="375"/>
+        </scene>
+        <!--Candle Stick View Controller-->
+        <scene sceneID="WcU-rL-2k2">
+            <objects>
+                <viewController storyboardIdentifier="CandleStickViewController" id="sOe-CQ-B4i" customClass="CandleStickViewController" customModule="candleStickApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9e2-Lz-nAK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="lRq-d2-6xp">
+                                <rect key="frame" x="20" y="103" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zZk-g2-fPW" customClass="CandleStickChartView" customModule="Charts">
+                                        <rect key="frame" x="0.0" y="47" width="375" height="501"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="HqX-eg-y5G" firstAttribute="bottom" secondItem="zZk-g2-fPW" secondAttribute="bottom" constant="119" id="Bqe-8u-ykE"/>
+                                    <constraint firstItem="HqX-eg-y5G" firstAttribute="trailing" secondItem="zZk-g2-fPW" secondAttribute="trailing" id="FnC-Ra-yUA"/>
+                                    <constraint firstItem="zZk-g2-fPW" firstAttribute="leading" secondItem="HqX-eg-y5G" secondAttribute="leading" id="msG-YI-6jy"/>
+                                    <constraint firstItem="zZk-g2-fPW" firstAttribute="top" secondItem="lRq-d2-6xp" secondAttribute="top" constant="47" id="wV2-KJ-672"/>
+                                </constraints>
+                                <viewLayoutGuide key="safeArea" id="HqX-eg-y5G"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="oQR-Uh-F7r"/>
+                    </view>
+                    <connections>
+                        <outlet property="chartView" destination="zZk-g2-fPW" id="9PQ-5S-84F"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v6Z-2K-1Mw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1763.7681159420292" y="361.60714285714283"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="tgU-PS-2X6">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FZf-Iw-uTx" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kcZ-0Z-Gj7">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Hud-tb-BQg" kind="relationship" relationship="rootViewController" id="EPh-l5-HG7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GFC-uQ-zcE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
         </scene>
     </scenes>
 </document>

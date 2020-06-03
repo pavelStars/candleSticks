@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		084F8D4116628E54DC48A96A /* Pods_candleStickAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 733AE79966A93ACC8D82049F /* Pods_candleStickAppTests.framework */; };
+		87299F3F248813BE0007082E /* WeeklyTimeSeriesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87299F3E248813BE0007082E /* WeeklyTimeSeriesList.swift */; };
+		87299F41248814600007082E /* MonthlyTimeSeries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87299F40248814600007082E /* MonthlyTimeSeries.swift */; };
 		879EBD47248374F20090035C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879EBD46248374F20090035C /* AppDelegate.swift */; };
 		879EBD49248374F20090035C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879EBD48248374F20090035C /* SceneDelegate.swift */; };
 		879EBD4B248374F20090035C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879EBD4A248374F20090035C /* ViewController.swift */; };
@@ -14,6 +17,28 @@
 		879EBD50248374F60090035C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 879EBD4F248374F60090035C /* Assets.xcassets */; };
 		879EBD53248374F60090035C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 879EBD51248374F60090035C /* LaunchScreen.storyboard */; };
 		879EBD5E248374F70090035C /* candleStickAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879EBD5D248374F70090035C /* candleStickAppTests.swift */; };
+		879EBD70248378570090035C /* CandleStickViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879EBD68248378570090035C /* CandleStickViewInput.swift */; };
+		879EBD71248378570090035C /* CandleStickInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879EBD69248378570090035C /* CandleStickInteractorOutput.swift */; };
+		879EBD72248378570090035C /* CandleStickPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879EBD6A248378570090035C /* CandleStickPresenter.swift */; };
+		879EBD73248378570090035C /* CandleStickInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879EBD6B248378570090035C /* CandleStickInteractorInput.swift */; };
+		879EBD74248378570090035C /* CandleStickViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879EBD6C248378570090035C /* CandleStickViewController.swift */; };
+		879EBD75248378570090035C /* CandleStickInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879EBD6D248378570090035C /* CandleStickInteractor.swift */; };
+		879EBD76248378570090035C /* CandleStickViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879EBD6E248378570090035C /* CandleStickViewOutput.swift */; };
+		879EBD77248378570090035C /* CandleStickModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879EBD6F248378570090035C /* CandleStickModuleConfigurator.swift */; };
+		879EBD7F2483792E0090035C /* UIViewController+StoryBoardCreation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879EBD7E2483792E0090035C /* UIViewController+StoryBoardCreation.swift */; };
+		879EBD81248379500090035C /* NSObject+ClassName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879EBD80248379500090035C /* NSObject+ClassName.swift */; };
+		879EBD83248379710090035C /* Activable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879EBD82248379710090035C /* Activable.swift */; };
+		879EBD8524837AE00090035C /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879EBD8424837AE00090035C /* ErrorHandler.swift */; };
+		879EBD8724837B0B0090035C /* StoryboardProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879EBD8624837B0B0090035C /* StoryboardProvider.swift */; };
+		879EBD8924837B3B0090035C /* UIViewController+ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879EBD8824837B3B0090035C /* UIViewController+ErrorHandler.swift */; };
+		879EBD8B24837B580090035C /* Result+WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879EBD8A24837B580090035C /* Result+WebService.swift */; };
+		879EBD8D24837CB70090035C /* DataWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879EBD8C24837CB70090035C /* DataWebService.swift */; };
+		879EBD90248382AE0090035C /* CandleStickCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879EBD8F248382AE0090035C /* CandleStickCoordinator.swift */; };
+		879EBD93248389880090035C /* TimeSeries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879EBD92248389880090035C /* TimeSeries.swift */; };
+		879EBD9524838BC10090035C /* DailyTimeSeriesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879EBD9424838BC10090035C /* DailyTimeSeriesList.swift */; };
+		879EBD9724838F830090035C /* MetaData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879EBD9624838F830090035C /* MetaData.swift */; };
+		879EBD9A248390600090035C /* ResponseObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879EBD99248390600090035C /* ResponseObject.swift */; };
+		F08E531F19ED7AA4A0EE671D /* Pods_candleStickApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5DBEB93BB3A5980C0D8D80E /* Pods_candleStickApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +52,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C57098B4CE2C5BD4A420C54 /* Pods-candleStickAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-candleStickAppTests.release.xcconfig"; path = "Target Support Files/Pods-candleStickAppTests/Pods-candleStickAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		733AE79966A93ACC8D82049F /* Pods_candleStickAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_candleStickAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		87299F3E248813BE0007082E /* WeeklyTimeSeriesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyTimeSeriesList.swift; sourceTree = "<group>"; };
+		87299F40248814600007082E /* MonthlyTimeSeries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthlyTimeSeries.swift; sourceTree = "<group>"; };
 		879EBD43248374F20090035C /* candleStickApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = candleStickApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		879EBD46248374F20090035C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		879EBD48248374F20090035C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +67,31 @@
 		879EBD59248374F70090035C /* candleStickAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = candleStickAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		879EBD5D248374F70090035C /* candleStickAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = candleStickAppTests.swift; sourceTree = "<group>"; };
 		879EBD5F248374F70090035C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		879EBD68248378570090035C /* CandleStickViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandleStickViewInput.swift; sourceTree = "<group>"; };
+		879EBD69248378570090035C /* CandleStickInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandleStickInteractorOutput.swift; sourceTree = "<group>"; };
+		879EBD6A248378570090035C /* CandleStickPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandleStickPresenter.swift; sourceTree = "<group>"; };
+		879EBD6B248378570090035C /* CandleStickInteractorInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandleStickInteractorInput.swift; sourceTree = "<group>"; };
+		879EBD6C248378570090035C /* CandleStickViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandleStickViewController.swift; sourceTree = "<group>"; };
+		879EBD6D248378570090035C /* CandleStickInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandleStickInteractor.swift; sourceTree = "<group>"; };
+		879EBD6E248378570090035C /* CandleStickViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandleStickViewOutput.swift; sourceTree = "<group>"; };
+		879EBD6F248378570090035C /* CandleStickModuleConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandleStickModuleConfigurator.swift; sourceTree = "<group>"; };
+		879EBD7E2483792E0090035C /* UIViewController+StoryBoardCreation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+StoryBoardCreation.swift"; sourceTree = "<group>"; };
+		879EBD80248379500090035C /* NSObject+ClassName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+ClassName.swift"; sourceTree = "<group>"; };
+		879EBD82248379710090035C /* Activable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activable.swift; sourceTree = "<group>"; };
+		879EBD8424837AE00090035C /* ErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
+		879EBD8624837B0B0090035C /* StoryboardProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardProvider.swift; sourceTree = "<group>"; };
+		879EBD8824837B3B0090035C /* UIViewController+ErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+ErrorHandler.swift"; sourceTree = "<group>"; };
+		879EBD8A24837B580090035C /* Result+WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Result+WebService.swift"; sourceTree = "<group>"; };
+		879EBD8C24837CB70090035C /* DataWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataWebService.swift; sourceTree = "<group>"; };
+		879EBD8F248382AE0090035C /* CandleStickCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandleStickCoordinator.swift; sourceTree = "<group>"; };
+		879EBD92248389880090035C /* TimeSeries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSeries.swift; sourceTree = "<group>"; };
+		879EBD9424838BC10090035C /* DailyTimeSeriesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyTimeSeriesList.swift; sourceTree = "<group>"; };
+		879EBD9624838F830090035C /* MetaData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetaData.swift; sourceTree = "<group>"; };
+		879EBD99248390600090035C /* ResponseObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseObject.swift; sourceTree = "<group>"; };
+		B5DBEB93BB3A5980C0D8D80E /* Pods_candleStickApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_candleStickApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C573A6CF51EC8DFF44D4BC5E /* Pods-candleStickAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-candleStickAppTests.debug.xcconfig"; path = "Target Support Files/Pods-candleStickAppTests/Pods-candleStickAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E7415D1F42F31D618FB4AB34 /* Pods-candleStickApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-candleStickApp.release.xcconfig"; path = "Target Support Files/Pods-candleStickApp/Pods-candleStickApp.release.xcconfig"; sourceTree = "<group>"; };
+		F3FEA54F4B83C0D7BF7953A3 /* Pods-candleStickApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-candleStickApp.debug.xcconfig"; path = "Target Support Files/Pods-candleStickApp/Pods-candleStickApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F08E531F19ED7AA4A0EE671D /* Pods_candleStickApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,18 +107,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				084F8D4116628E54DC48A96A /* Pods_candleStickAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		003E91A7D0389EB109C374E5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B5DBEB93BB3A5980C0D8D80E /* Pods_candleStickApp.framework */,
+				733AE79966A93ACC8D82049F /* Pods_candleStickAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		879EBD3A248374F20090035C = {
 			isa = PBXGroup;
 			children = (
 				879EBD45248374F20090035C /* candleStickApp */,
 				879EBD5C248374F70090035C /* candleStickAppTests */,
 				879EBD44248374F20090035C /* Products */,
+				C29DFC89DA4A671D0D95CF03 /* Pods */,
+				003E91A7D0389EB109C374E5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +146,14 @@
 		879EBD45248374F20090035C /* candleStickApp */ = {
 			isa = PBXGroup;
 			children = (
+				879EBD78248378610090035C /* Configurator */,
+				879EBD8E248382980090035C /* Coordinator */,
+				879EBD792483788B0090035C /* Interactor */,
+				879EBD91248389140090035C /* Model */,
+				879EBD7A248378960090035C /* Presenter */,
+				879EBD7B248378B90090035C /* WebService */,
+				879EBD7C248378DA0090035C /* View */,
+				879EBD7D248378E80090035C /* Utils */,
 				879EBD46248374F20090035C /* AppDelegate.swift */,
 				879EBD48248374F20090035C /* SceneDelegate.swift */,
 				879EBD4A248374F20090035C /* ViewController.swift */,
@@ -99,6 +174,96 @@
 			path = candleStickAppTests;
 			sourceTree = "<group>";
 		};
+		879EBD78248378610090035C /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				879EBD6F248378570090035C /* CandleStickModuleConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		879EBD792483788B0090035C /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				879EBD6B248378570090035C /* CandleStickInteractorInput.swift */,
+				879EBD6D248378570090035C /* CandleStickInteractor.swift */,
+				879EBD69248378570090035C /* CandleStickInteractorOutput.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		879EBD7A248378960090035C /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				879EBD6A248378570090035C /* CandleStickPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		879EBD7B248378B90090035C /* WebService */ = {
+			isa = PBXGroup;
+			children = (
+				879EBD8C24837CB70090035C /* DataWebService.swift */,
+			);
+			path = WebService;
+			sourceTree = "<group>";
+		};
+		879EBD7C248378DA0090035C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				879EBD6E248378570090035C /* CandleStickViewOutput.swift */,
+				879EBD6C248378570090035C /* CandleStickViewController.swift */,
+				879EBD68248378570090035C /* CandleStickViewInput.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		879EBD7D248378E80090035C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				879EBD7E2483792E0090035C /* UIViewController+StoryBoardCreation.swift */,
+				879EBD80248379500090035C /* NSObject+ClassName.swift */,
+				879EBD82248379710090035C /* Activable.swift */,
+				879EBD8424837AE00090035C /* ErrorHandler.swift */,
+				879EBD8624837B0B0090035C /* StoryboardProvider.swift */,
+				879EBD8824837B3B0090035C /* UIViewController+ErrorHandler.swift */,
+				879EBD8A24837B580090035C /* Result+WebService.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		879EBD8E248382980090035C /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				879EBD8F248382AE0090035C /* CandleStickCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		879EBD91248389140090035C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				879EBD92248389880090035C /* TimeSeries.swift */,
+				879EBD9424838BC10090035C /* DailyTimeSeriesList.swift */,
+				87299F3E248813BE0007082E /* WeeklyTimeSeriesList.swift */,
+				87299F40248814600007082E /* MonthlyTimeSeries.swift */,
+				879EBD9624838F830090035C /* MetaData.swift */,
+				879EBD99248390600090035C /* ResponseObject.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C29DFC89DA4A671D0D95CF03 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F3FEA54F4B83C0D7BF7953A3 /* Pods-candleStickApp.debug.xcconfig */,
+				E7415D1F42F31D618FB4AB34 /* Pods-candleStickApp.release.xcconfig */,
+				C573A6CF51EC8DFF44D4BC5E /* Pods-candleStickAppTests.debug.xcconfig */,
+				0C57098B4CE2C5BD4A420C54 /* Pods-candleStickAppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +271,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 879EBD62248374F70090035C /* Build configuration list for PBXNativeTarget "candleStickApp" */;
 			buildPhases = (
+				A15C608B2813BB90F1FB838E /* [CP] Check Pods Manifest.lock */,
 				879EBD3F248374F20090035C /* Sources */,
 				879EBD40248374F20090035C /* Frameworks */,
 				879EBD41248374F20090035C /* Resources */,
+				289227085DFF8AB3114343B1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,6 +290,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 879EBD65248374F70090035C /* Build configuration list for PBXNativeTarget "candleStickAppTests" */;
 			buildPhases = (
+				9129D5628AB1E86C4CA1E025 /* [CP] Check Pods Manifest.lock */,
 				879EBD55248374F60090035C /* Sources */,
 				879EBD56248374F60090035C /* Frameworks */,
 				879EBD57248374F60090035C /* Resources */,
@@ -195,14 +363,101 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		289227085DFF8AB3114343B1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-candleStickApp/Pods-candleStickApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-candleStickApp/Pods-candleStickApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-candleStickApp/Pods-candleStickApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9129D5628AB1E86C4CA1E025 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-candleStickAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A15C608B2813BB90F1FB838E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-candleStickApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		879EBD3F248374F20090035C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				879EBD90248382AE0090035C /* CandleStickCoordinator.swift in Sources */,
+				879EBD72248378570090035C /* CandleStickPresenter.swift in Sources */,
+				879EBD93248389880090035C /* TimeSeries.swift in Sources */,
+				879EBD77248378570090035C /* CandleStickModuleConfigurator.swift in Sources */,
+				87299F3F248813BE0007082E /* WeeklyTimeSeriesList.swift in Sources */,
+				879EBD75248378570090035C /* CandleStickInteractor.swift in Sources */,
+				879EBD8924837B3B0090035C /* UIViewController+ErrorHandler.swift in Sources */,
+				879EBD71248378570090035C /* CandleStickInteractorOutput.swift in Sources */,
+				879EBD81248379500090035C /* NSObject+ClassName.swift in Sources */,
 				879EBD4B248374F20090035C /* ViewController.swift in Sources */,
+				879EBD70248378570090035C /* CandleStickViewInput.swift in Sources */,
+				879EBD8724837B0B0090035C /* StoryboardProvider.swift in Sources */,
+				879EBD76248378570090035C /* CandleStickViewOutput.swift in Sources */,
 				879EBD47248374F20090035C /* AppDelegate.swift in Sources */,
+				879EBD9A248390600090035C /* ResponseObject.swift in Sources */,
+				879EBD9524838BC10090035C /* DailyTimeSeriesList.swift in Sources */,
+				879EBD8D24837CB70090035C /* DataWebService.swift in Sources */,
+				879EBD83248379710090035C /* Activable.swift in Sources */,
+				879EBD9724838F830090035C /* MetaData.swift in Sources */,
+				879EBD73248378570090035C /* CandleStickInteractorInput.swift in Sources */,
+				879EBD74248378570090035C /* CandleStickViewController.swift in Sources */,
+				87299F41248814600007082E /* MonthlyTimeSeries.swift in Sources */,
+				879EBD8524837AE00090035C /* ErrorHandler.swift in Sources */,
+				879EBD7F2483792E0090035C /* UIViewController+StoryBoardCreation.swift in Sources */,
 				879EBD49248374F20090035C /* SceneDelegate.swift in Sources */,
+				879EBD8B24837B580090035C /* Result+WebService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,6 +615,7 @@
 		};
 		879EBD63248374F70090035C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3FEA54F4B83C0D7BF7953A3 /* Pods-candleStickApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -377,6 +633,7 @@
 		};
 		879EBD64248374F70090035C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7415D1F42F31D618FB4AB34 /* Pods-candleStickApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -394,6 +651,7 @@
 		};
 		879EBD66248374F70090035C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C573A6CF51EC8DFF44D4BC5E /* Pods-candleStickAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -415,6 +673,7 @@
 		};
 		879EBD67248374F70090035C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C57098B4CE2C5BD4A420C54 /* Pods-candleStickAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
